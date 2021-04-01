@@ -1,0 +1,223 @@
+body {
+    font-family: "Ample Soft Pro-Medium";
+}
+p{
+    color: #868686;
+}
+.navbar .megamenu {
+    padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+
+@media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+        position: static!important;
+    }
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+
+@media(max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    }
+}
+.mainMenuContainer{
+    max-width: 1546px;
+    -webkit-box-shadow: 0px 2px 10px rgb(0 0 0 / 20%) !important;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 20%) !important;
+    border-radius: 10px;
+}
+.navbar {
+    padding: 10px 75px;
+}
+
+.megaMenuCenter {
+    max-width: 73%;
+    margin: 0 auto;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #868686 !important;
+    padding: 0 0 0 50px !important;
+}
+
+.nav-link:hover {
+    color: #71B9AD !important;
+}
+
+/* .navBarMain {
+} */
+
+.megamenu {
+    border-top: 1px solid #D3D3D3;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0px 4px 7px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0px 4px 7px 0px rgb(0 0 0 / 20%);
+    -webkit-animation: slide-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.col-megamenu {
+    text-align: center;
+}
+
+.col-megamenu h6 {
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #464646;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.col-megamenu .title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-bottom: 3px solid #F5F5F5;
+}
+
+.col-megamenu a {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(70, 70, 70, 0.97);
+    text-decoration: none;
+}
+
+.col-megamenu li:hover {
+    background-color: #e9ecef;
+}
+
+.loginIcon::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 3px;
+    background: #f4f4f9;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px auto 26px;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle[aria-expanded="true"] img {
+    -webkit-transform: rotate( 180deg);
+    transform: rotate( 180deg) !important;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.dropdown-toggle[aria-expanded="false"] img {
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.navFullWidth, .navbar .container-fluid {
+    padding-right: var(--bs-gutter-x, 0rem);
+    padding-left: var(--bs-gutter-x, 0rem);
+}
+
+.mainBody{
+    max-width: 1546px;
+    -webkit-box-shadow: 0px 2px 10px rgb(0 0 0 / 20%) !important;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 20%) !important;
+}
+.divider{
+    max-width: 742px;
+    width: 63.659%;
+    height: 1px;
+    margin: 100px auto 100px auto;
+    border-bottom: 4px solid #F5F5F5;
+}
+.hTitle{
+    color: #378B85;
+    font-weight: bolder;
+}
+.subscribeInput{
+    background: #F5F5F5;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+    color: #868686;
+
+}
+.subscribeButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    font-family: "Ample Soft Pro-Regular";
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #378B85;
+    border-color: #378B85;
+}
+.subscribeForm{
+    margin-top: 15px;
+    width: 80%;
+
+}
+@media only screen and (max-width: 991px) {
+    .navbar {
+        padding: 20px 0;
+    }
+    .megaMenuCenter {
+        max-width: 100%;
+    }
+    .loginIcon::after {
+        display: none;
+    }
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+    .subscribeForm{
+        width: 100%;
+    }
+}
